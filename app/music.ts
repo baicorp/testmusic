@@ -53,7 +53,7 @@ export async function getVideo(videoId: string): Promise<MusicPlayerProps> {
       ]?.url,
     };
 
-    return result;
+    return data;
   } catch (error) {
     console.error("Error fetching YouTube data POST:", error);
     return {
