@@ -11,25 +11,25 @@ export default async function page({
 
   const response = await fetch(`${process.env.BASE_URL}/api/watch`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "User-Agent":
-        "com.google.android.youtube/17.36.4 (Linux; U; Android 12; GB) gzip",
-    },
-    body: JSON.stringify({
-      videoId,
-      context: {
-        client: {
-          clientName: "ANDROID_TESTSUITE",
-          clientVersion: "1.9",
-          androidSdkVersion: 30,
-          hl: "en",
-          gl: "SG",
-          utcOffsetMinutes: 0,
-          params: "8AEB",
-        },
-      },
-    }),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     "User-Agent":
+    //       "com.google.android.youtube/17.36.4 (Linux; U; Android 12; GB) gzip",
+    //   },
+    //   body: JSON.stringify({
+    //     videoId,
+    //     context: {
+    //       client: {
+    //         clientName: "ANDROID_TESTSUITE",
+    //         clientVersion: "1.9",
+    //         androidSdkVersion: 30,
+    //         hl: "en",
+    //         gl: "SG",
+    //         utcOffsetMinutes: 0,
+    //         params: "8AEB",
+    //       },
+    //     },
+    //   }),
   });
 
   console.log(process.env.BASE_URL);
